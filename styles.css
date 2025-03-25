@@ -3,6 +3,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    
+}
+h2 {
+    color: #2c3e50;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 1;
+    
 }
 
 header {
@@ -42,15 +50,67 @@ nav ul li a {
     font-family: Arial, sans-serif;
 }
 .fixed-bg {
-    background-image: url('images/road.jpg');
+    background-image: url('images/trail1.jpg');
     min-height: 600px;
     width: 100%;
     background-attachment: fixed;
-    background-position:top;
+    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.9;
-    filter: brightness(0.5);
+    /* opacity: 0.7; */
+    filter: brightness(0.9);
+}
+.fixed-bg h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    font-weight:900;
+    text-align: center;
+}
+.mountain-bg{
+    background-image: url('images/sunset.jpg');
+    min-height: 600px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.7; */
+    filter: brightness(0.9);
+}
+.mountain-bg h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    font-weight:900;
+    text-align: center;
+}
+.trail-bg{
+    background-image: url('images/treesandsun.jpeg');
+    min-height: 600px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.7; */
+    filter: brightness(0.9);
+}
+.trail-bg h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    font-weight:900;
+    text-align: center;
 }
 .container {
     padding: 20px;
@@ -58,26 +118,26 @@ nav ul li a {
 .intro {
     text-align: center;
 }
-#home {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 30px;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1400px;
-    margin: auto;
-    padding: 40px;
-}
-#home img {
-    max-width: 60%;
-    height: auto;
-    border-radius: 5px;
-    object-fit: cover;
-}
-.content-wrapper {
-    max-width: 45%;
-    padding: 20px;
-}
+    #home {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        margin: auto;
+        padding: 40px;
+    }
+    #home img {
+        max-width: 60%;
+        height: auto;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+    #home img:hover {
+        opacity: 0.9;
+        transition: 0.5s ease;
+    }
 
 .content-wrapper h2 {
     margin: 0;
@@ -93,42 +153,17 @@ nav ul li a {
 
 }
 
-.featured {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-
-.featured-item {
-    flex: 1 1 calc(33.333% - 20px);
-    background-color: white;
-    padding: 9px;
-    border: 1px solid #ddd;
-    border-radius: px;
-    text-align: center;
-}
-
-.featured-item img {
-    max-width: 90%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-.featured-item button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #367438;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.featured-item button:hover {
-    background-color: #45a049;
-}
+div.scroll-container {
+    background-color: #454444;  
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+  }
+  
 
 .footer{
     background-color: #285c2a;
