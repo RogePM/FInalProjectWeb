@@ -152,6 +152,13 @@ nav ul li a {
     line-height: 1.5;
 
 }
+.content-wrapper ul{
+    color: #555;
+    font-size: 18px;
+    line-height: 1.5;
+    list-style-type: disc;
+    padding-left: 20px;
+}
 
 div.scroll-container {
     background-color: #454444;  
